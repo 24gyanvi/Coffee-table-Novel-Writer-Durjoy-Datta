@@ -1,0 +1,25 @@
+.card-container {
+   height: 20px;
+   perspective: 100;
+position: relative;
+      width: 20px;
+}
+.card {
+height: 50%;
+transform-style: preserve-3d;
+transition: all 1s ease-in-out;
+position: absolute;
+width: 50%;
+}
+.card:hover {
+transform: rotateY(180deg)
+}
+.card .side {
+backface-visibility: hidden;
+height: 50%;
+position: absolute;
+width: 50%;
+}
+.card .back {
+transform: rotateY(180deg)
+}
